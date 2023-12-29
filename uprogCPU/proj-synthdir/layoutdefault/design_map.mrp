@@ -1,0 +1,332 @@
+Release 14.7 Map P.20131013 (lin64)
+Xilinx Mapping Report File for Design 'uprogCPU'
+
+Design Information
+------------------
+Command Line   : map -detail -u -p xc6slx16-3-csg324 -pr b -c 100 -o
+design_map.ncd design.ngd design.pcf 
+Target Device  : xc6slx16
+Target Package : csg324
+Target Speed   : -3
+Mapper Version : spartan6 -- $Revision: 1.55 $
+Mapped Date    : Mon May 22 16:12:11 2023
+
+Design Summary
+--------------
+Number of errors:      0
+Number of warnings:    1
+Slice Logic Utilization:
+  Number of Slice Registers:                   205 out of  18,224    1%
+    Number used as Flip Flops:                 203
+    Number used as Latches:                      0
+    Number used as Latch-thrus:                  0
+    Number used as AND/OR logics:                2
+  Number of Slice LUTs:                        611 out of   9,112    6%
+    Number used as logic:                      391 out of   9,112    4%
+      Number using O6 output only:             297
+      Number using O5 output only:              29
+      Number using O5 and O6:                   65
+      Number used as ROM:                        0
+    Number used as Memory:                     216 out of   2,176    9%
+      Number used as Dual Port RAM:            176
+        Number using O6 output only:           176
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Single Port RAM:           40
+        Number using O6 output only:            40
+        Number using O5 output only:             0
+        Number using O5 and O6:                  0
+      Number used as Shift Register:             0
+    Number used exclusively as route-thrus:      4
+      Number with same-slice register load:      0
+      Number with same-slice carry load:         4
+      Number with other load:                    0
+
+Slice Logic Distribution:
+  Number of occupied Slices:                   195 out of   2,278    8%
+  Number of MUXCYs used:                        88 out of   4,556    1%
+  Number of LUT Flip Flop pairs used:          657
+    Number with an unused Flip Flop:           452 out of     657   68%
+    Number with an unused LUT:                  46 out of     657    7%
+    Number of fully used LUT-FF pairs:         159 out of     657   24%
+    Number of unique control sets:              21
+    Number of slice register sites lost
+      to control set restrictions:              53 out of  18,224    1%
+
+  A LUT Flip Flop pair for this architecture represents one LUT paired with
+  one Flip Flop within a slice.  A control set is a unique combination of
+  clock, reset, set, and enable signals for a registered element.
+  The Slice Logic Distribution report is not meaningful if the design is
+  over-mapped for a non-slice resource or if Placement fails.
+
+IO Utilization:
+  Number of bonded IOBs:                        12 out of     232    5%
+    Number of LOCed IOBs:                       11 out of      12   91%
+    IOB Flip Flops:                              2
+
+Specific Feature Utilization:
+  Number of RAMB16BWERs:                         0 out of      32    0%
+  Number of RAMB8BWERs:                          1 out of      64    1%
+  Number of BUFIO2/BUFIO2_2CLKs:                 0 out of      32    0%
+  Number of BUFIO2FB/BUFIO2FB_2CLKs:             0 out of      32    0%
+  Number of BUFG/BUFGMUXs:                       1 out of      16    6%
+    Number used as BUFGs:                        1
+    Number used as BUFGMUX:                      0
+  Number of DCM/DCM_CLKGENs:                     0 out of       4    0%
+  Number of ILOGIC2/ISERDES2s:                   0 out of     248    0%
+  Number of IODELAY2/IODRP2/IODRP2_MCBs:         0 out of     248    0%
+  Number of OLOGIC2/OSERDES2s:                   2 out of     248    1%
+    Number used as OLOGIC2s:                     2
+    Number used as OSERDES2s:                    0
+  Number of BSCANs:                              0 out of       4    0%
+  Number of BUFHs:                               0 out of     128    0%
+  Number of BUFPLLs:                             0 out of       8    0%
+  Number of BUFPLL_MCBs:                         0 out of       4    0%
+  Number of DSP48A1s:                            0 out of      32    0%
+  Number of ICAPs:                               0 out of       1    0%
+  Number of MCBs:                                0 out of       2    0%
+  Number of PCILOGICSEs:                         0 out of       2    0%
+  Number of PLL_ADVs:                            0 out of       2    0%
+  Number of PMVs:                                0 out of       1    0%
+  Number of STARTUPs:                            0 out of       1    0%
+  Number of SUSPEND_SYNCs:                       0 out of       1    0%
+
+Average Fanout of Non-Clock Nets:                5.63
+
+Peak Memory Usage:  839 MB
+Total REAL time to MAP completion:  6 secs 
+Total CPU time to MAP completion:   6 secs 
+
+Table of Contents
+-----------------
+Section 1 - Errors
+Section 2 - Warnings
+Section 3 - Informational
+Section 4 - Removed Logic Summary
+Section 5 - Removed Logic
+Section 6 - IOB Properties
+Section 7 - RPMs
+Section 8 - Guide Report
+Section 9 - Area Group and Partition Summary
+Section 10 - Timing Report
+Section 11 - Configuration String Information
+Section 12 - Control Set Information
+Section 13 - Utilization by Hierarchy
+
+Section 1 - Errors
+------------------
+
+Section 2 - Warnings
+--------------------
+WARNING:Security:43 - No license file was found in the standard Xilinx license
+directory.
+WARNING:Security:44 - Since no license file was found,
+WARNING:Security:42 - Your software subscription period has lapsed. Your current
+version of Xilinx tools will continue to function, but you no longer qualify for
+Xilinx software updates or new releases.
+WARNING:PhysDesignRules:2410 - This design is using one or more 9K Block RAMs
+   (RAMB8BWER).  9K Block RAM initialization data, both user defined and
+   default, may be incorrect and should not be used.  For more information,
+   please reference Xilinx Answer Record 39999.
+
+Section 3 - Informational
+-------------------------
+INFO:Security:50 - The XILINXD_LICENSE_FILE environment variable is set to
+'2100@xilinx.license.it.liu.se'.
+INFO:Security:52 - The LM_LICENSE_FILE environment variable is set to
+'1705@altera.license.it.liu.se'.
+INFO:Security:54 - 'xc6slx16' is a WebPack part.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem45/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem48/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem46/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem47/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem49/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem50/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem53/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem51/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem52/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem54/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem55/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem56/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem57/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem58/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem59/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem62/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem60/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem61/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem63/DPO has no load.
+INFO:LIT:243 - Logical network PM_c/Mram_p_mem64/DPO has no load.
+INFO:MapLib:562 - No environment variables are currently set.
+INFO:LIT:244 - All of the single ended outputs in this design are using slew
+   rate limited output drivers. The delay on speed critical single ended outputs
+   can be dramatically reduced by designating them as fast outputs.
+INFO:Pack:1716 - Initializing temperature to 85.000 Celsius. (default - Range:
+   0.000 to 85.000 Celsius)
+INFO:Pack:1720 - Initializing voltage to 1.140 Volts. (default - Range: 1.140 to
+   1.260 Volts)
+INFO:Map:215 - The Interim Design Summary has been generated in the MAP Report
+   (.mrp).
+INFO:Place:834 - Only a subset of IOs are locked. Out of 12 IOs, 11 are locked
+   and 1 are not locked. If you would like to print the names of these IOs,
+   please set the environment variable XIL_PAR_DESIGN_CHECK_VERBOSE to 1. 
+INFO:Pack:1650 - Map created a placed design.
+
+Section 4 - Removed Logic Summary
+---------------------------------
+   2 block(s) optimized away
+  32 Block(s) redundant
+
+Section 5 - Removed Logic
+-------------------------
+
+Optimized Block(s):
+TYPE 		BLOCK
+GND 		XST_GND
+VCC 		XST_VCC
+
+Redundant Block(s):
+TYPE 		BLOCK
+LUT1 		Madd_uPC[12]_GND_4_o_add_16_OUT_cy<1>_rt
+LUT1 		Madd_uPC[12]_GND_4_o_add_16_OUT_cy<2>_rt
+LUT1 		Madd_uPC[12]_GND_4_o_add_16_OUT_cy<3>_rt
+LUT1 		Madd_uPC[12]_GND_4_o_add_16_OUT_cy<4>_rt
+LUT1 		VGA_c/U1/Mcount_addr_cy<1>_rt
+LUT1 		VGA_c/U1/Mcount_addr_cy<2>_rt
+LUT1 		VGA_c/U1/Mcount_addr_cy<3>_rt
+LUT1 		VGA_c/U1/Mcount_addr_cy<4>_rt
+LUT1 		VGA_c/U1/Mcount_addr_cy<5>_rt
+LUT1 		VGA_c/U1/Mcount_addr_cy<6>_rt
+LUT1 		VGA_c/U1/Mcount_addr_cy<7>_rt
+LUT1 		VGA_c/U2/Maddsub_PWR_12_o_Ypixel1[8]_MuLt_38_OUT_Madd1_cy<7>_rt
+LUT1 		VGA_c/U2/Mcount_Ypixel1_cy<8>_rt
+LUT1 		VGA_c/U2/Maddsub_PWR_12_o_Ypixel1[8]_MuLt_38_OUT_Madd1_cy<6>_rt
+LUT1 		VGA_c/U2/Mcount_Ypixel1_cy<7>_rt
+LUT1 		VGA_c/U2/Mcount_Xpixel1_cy<8>_rt
+LUT1 		VGA_c/U2/Mcount_Xpixel1_cy<7>_rt
+LUT1 		VGA_c/U2/Mcount_Xpixel1_cy<6>_rt
+LUT1 		VGA_c/U2/Mcount_Xpixel1_cy<5>_rt
+LUT1 		VGA_c/U2/Mcount_Xpixel1_cy<4>_rt
+LUT1 		VGA_c/U2/Mcount_Xpixel1_cy<3>_rt
+LUT1 		VGA_c/U2/Mcount_Xpixel1_cy<2>_rt
+LUT1 		VGA_c/U2/Mcount_Xpixel1_cy<1>_rt
+LUT1 		VGA_c/U2/Mcount_Ypixel1_cy<6>_rt
+LUT1 		VGA_c/U2/Mcount_Ypixel1_cy<5>_rt
+LUT1 		VGA_c/U2/Mcount_Ypixel1_cy<4>_rt
+LUT1 		VGA_c/U2/Mcount_Ypixel1_cy<3>_rt
+LUT1 		VGA_c/U2/Mcount_Ypixel1_cy<2>_rt
+LUT1 		VGA_c/U2/Mcount_Ypixel1_cy<1>_rt
+LUT1 		VGA_c/U1/Mcount_addr_xor<8>_rt
+LUT1 		VGA_c/U2/Mcount_Xpixel1_xor<9>_rt
+LUT1 		VGA_c/U2/Mcount_Ypixel1_xor<9>_rt
+
+Section 6 - IOB Properties
+--------------------------
+
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| IOB Name                           | Type             | Direction | IO Standard          | Diff  | Drive    | Slew | Reg (s)      | Resistor | IOB      |
+|                                    |                  |           |                      | Term  | Strength | Rate |              |          | Delay    |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Hsync                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| Vsync                              | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW | OFF          |          |          |
+| clk                                | IOB              | INPUT     | LVCMOS33             |       |          |      |              |          |          |
+| rst                                | IOB              | INPUT     | LVCMOS25             |       |          |      |              |          |          |
+| vgaBlue<1>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vgaBlue<2>                         | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vgaGreen<0>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vgaGreen<1>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vgaGreen<2>                        | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vgaRed<0>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vgaRed<1>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
+| vgaRed<2>                          | IOB              | OUTPUT    | LVCMOS33             |       | 12       | SLOW |              |          |          |
++---------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 7 - RPMs
+----------------
+
+Section 8 - Guide Report
+------------------------
+Guide not run on this design.
+
+Section 9 - Area Group and Partition Summary
+--------------------------------------------
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+Area Group Information
+----------------------
+
+  No area groups were found in this design.
+
+----------------------
+
+Section 10 - Timing Report
+--------------------------
+A logic-level (pre-route) timing report can be generated by using Xilinx static
+timing analysis tools, Timing Analyzer (GUI) or TRCE (command line), with the
+mapped NCD and PCF files. Please note that this timing report will be generated
+using estimated delay information. For accurate numbers, please generate a
+timing report with the post Place and Route NCD file.
+
+For more information about the Timing Analyzer, consult the Xilinx Timing
+Analyzer Reference Manual; for more information about TRCE, consult the Xilinx
+Command Line Tools User Guide "TRACE" chapter.
+
+Section 11 - Configuration String Details
+-----------------------------------------
+
+Section 12 - Control Set Information
+------------------------------------
++----------------------------------------------------------------------------------------------------------------------------------------------+
+| Clock Signal | Reset Signal                                  | Set Signal | Enable Signal                | Slice Load Count | Bel Load Count |
++----------------------------------------------------------------------------------------------------------------------------------------------+
+| clk_BUFGP    |                                               |            |                              | 8                | 12             |
+| clk_BUFGP    |                                               |            | ALU_c/_n0104_inv             | 9                | 17             |
+| clk_BUFGP    |                                               |            | uM[24]_GND_4_o_equal_29_o    | 4                | 16             |
+| clk_BUFGP    |                                               |            | write_ctrl                   | 14               | 54             |
+| clk_BUFGP    |                                               |            | write_ctrl1                  | 14               | 54             |
+| clk_BUFGP    |                                               |            | write_ctrl2                  | 14               | 54             |
+| clk_BUFGP    |                                               |            | write_ctrl3                  | 14               | 54             |
+| clk_BUFGP    | VGA_c/U1/vga_motor_data[4]_GND_27_o_equal_2_o |            |                              | 3                | 8              |
+| clk_BUFGP    | VGA_c/U2/GND_58_o_Ypixel1[9]_AND_43_o         |            |                              | 1                | 1              |
+| clk_BUFGP    | VGA_c/U2/Mcount_Xpixel1_val                   |            | VGA_c/U2/Clk25               | 3                | 10             |
+| clk_BUFGP    | VGA_c/U2/Mcount_Ypixel1_val                   |            | VGA_c/U2/Mcount_Ypixel1_val1 | 3                | 10             |
+| clk_BUFGP    | VGA_c/U2/PWR_12_o_Xpixel1[9]_AND_41_o         |            |                              | 1                | 1              |
+| clk_BUFGP    | _n0212                                        |            | _n0220_inv                   | 4                | 16             |
+| clk_BUFGP    | rst_IBUF                                      |            |                              | 3                | 10             |
+| clk_BUFGP    | rst_IBUF                                      |            | _n0226_inv                   | 4                | 16             |
+| clk_BUFGP    | rst_IBUF                                      |            | _n0230_inv                   | 4                | 16             |
+| clk_BUFGP    | rst_IBUF                                      |            | _n0234_inv                   | 4                | 16             |
+| clk_BUFGP    | rst_IBUF                                      |            | _n0238_inv                   | 4                | 16             |
+| clk_BUFGP    | rst_IBUF                                      |            | uM[24]_GND_4_o_equal_32_o    | 4                | 16             |
+| clk_BUFGP    | rst_IBUF                                      |            | uM[24]_GND_4_o_equal_36_o    | 4                | 16             |
+| clk_BUFGP    | rst_uM[16]_OR_4_o                             |            | _n0281_inv                   | 2                | 6              |
++----------------------------------------------------------------------------------------------------------------------------------------------+
+
+Section 13 - Utilization by Hierarchy
+-------------------------------------
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| Module             | Partition | Slices*       | Slice Reg     | LUTs          | LUTRAM        | BRAM/FIFO | DSP48A1 | BUFG  | BUFIO | BUFR  | DCM   | PLL_ADV   | Full Hierarchical Name |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+| uprogCPU/          |           | 101/242       | 144/203       | 216/571       | 0/176         | 0/1       | 0/0     | 1/1   | 0/0   | 0/0   | 0/0   | 0/0       | uprogCPU               |
+| +ALU_c             |           | 40/40         | 18/18         | 75/75         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | uprogCPU/ALU_c         |
+| +PM_c              |           | 44/44         | 0/0           | 176/176       | 176/176       | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | uprogCPU/PM_c          |
+| +VGA_c             |           | 4/42          | 0/41          | 5/87          | 0/0           | 0/1       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | uprogCPU/VGA_c         |
+| ++U1               |           | 9/9           | 9/9           | 21/21         | 0/0           | 1/1       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | uprogCPU/VGA_c/U1      |
+| ++U2               |           | 25/25         | 32/32         | 55/55         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | uprogCPU/VGA_c/U2      |
+| ++U2_U0b           |           | 4/4           | 0/0           | 6/6           | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | uprogCPU/VGA_c/U2_U0b  |
+| +uMem_c            |           | 15/15         | 0/0           | 17/17         | 0/0           | 0/0       | 0/0     | 0/0   | 0/0   | 0/0   | 0/0   | 0/0       | uprogCPU/uMem_c        |
++-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
+
+* Slices can be packed with basic elements from multiple hierarchies.
+  Therefore, a slice will be counted in every hierarchical module
+  that each of its packed basic elements belong to.
+** For each column, there are two numbers reported <A>/<B>.
+   <A> is the number of elements that belong to that specific hierarchical module.
+   <B> is the total number of elements from that hierarchical module and any lower level
+   hierarchical modules below.
+*** The LUTRAM column counts all LUTs used as memory including RAM, ROM, and shift registers.

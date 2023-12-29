@@ -1,0 +1,7 @@
+INFILE=/home/eliry213/docs/uprogCPU/VGA_lab_v2/VGA_lab-synthdir/layoutdefault/design.ncd
+OUTFILE=/home/eliry213/docs/uprogCPU/VGA_lab_v2/VGA_lab-synthdir/layoutdefault/design.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/home/eliry213/docs/uprogCPU/VGA_lab_v2/VGA_lab-synthdir/layoutdefault
+LICENSE=ISE
+USER_INFO=211887302_1777494980_210602001_508

@@ -1,0 +1,41 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon May 08 09:46:00 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "vgaGreen<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "vgaGreen<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "vgaGreen<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "PS2KeyboardData" LOCATE = SITE "J13" LEVEL 1;
+COMP "Hsync" LOCATE = SITE "N6" LEVEL 1;
+COMP "Vsync" LOCATE = SITE "P7" LEVEL 1;
+COMP "vgaBlue<1>" LOCATE = SITE "R7" LEVEL 1;
+COMP "vgaBlue<2>" LOCATE = SITE "T7" LEVEL 1;
+COMP "PS2KeyboardCLK" LOCATE = SITE "L12" LEVEL 1;
+COMP "vgaRed<0>" LOCATE = SITE "U7" LEVEL 1;
+COMP "rst" LOCATE = SITE "B8" LEVEL 1;
+COMP "vgaRed<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "vgaRed<2>" LOCATE = SITE "N7" LEVEL 1;
+PIN U2/Mram_VideoRAM_pins<22> = BEL "U2/Mram_VideoRAM" PINNAME CLKA;
+PIN U2/Mram_VideoRAM_pins<23> = BEL "U2/Mram_VideoRAM" PINNAME CLKB;
+PIN U3_U0b/Mram_addr[7]_ROM_DATA[255][7]_wide_mux_0_OUT_pins<10> = BEL
+        "U3_U0b/Mram_addr[7]_ROM_DATA[255][7]_wide_mux_0_OUT" PINNAME
+        CLKAWRCLK;
+TIMEGRP sys_clk_pin = BEL "U2/addr_0" BEL "U2/addr_1" BEL "U2/addr_2" BEL
+        "U3/Xpixel1_9" BEL "U3/Xpixel1_8" BEL "U3/Xpixel1_7" BEL
+        "U3/Xpixel1_6" BEL "U3/Xpixel1_5" BEL "U3/Xpixel1_4" BEL
+        "U3/Xpixel1_3" BEL "U3/Xpixel1_2" BEL "U3/Xpixel1_1" BEL
+        "U3/Xpixel1_0" BEL "U3/ClkDiv_1" BEL "U3/ClkDiv_0" BEL "U3/Ypixel1_9"
+        BEL "U3/Ypixel1_8" BEL "U3/Ypixel1_7" BEL "U3/Ypixel1_6" BEL
+        "U3/Ypixel1_5" BEL "U3/Ypixel1_4" BEL "U3/Ypixel1_3" BEL
+        "U3/Ypixel1_2" BEL "U3/Ypixel1_1" BEL "U3/Ypixel1_0" BEL "U3/Vsync"
+        BEL "U3/Hsync" BEL "U3/blank" BEL "U3/Ypixel2_4" BEL "U3/Ypixel2_3"
+        BEL "U3/Ypixel2_2" BEL "U3/Xpixel2_4" BEL "U3/Xpixel2_3" BEL
+        "U3/Xpixel2_2" BEL "U3/Vsync2" BEL "U3/Hsync2" BEL "U3/blank2" BEL
+        "clk_BUFGP/BUFG" PIN "U2/Mram_VideoRAM_pins<22>" PIN
+        "U2/Mram_VideoRAM_pins<23>" PIN
+        "U3_U0b/Mram_addr[7]_ROM_DATA[255][7]_wide_mux_0_OUT_pins<10>";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

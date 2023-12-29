@@ -1,0 +1,189 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Mon May 22 16:12:17 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "vgaGreen<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "vgaGreen<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "vgaGreen<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "Hsync" LOCATE = SITE "N6" LEVEL 1;
+COMP "Vsync" LOCATE = SITE "P7" LEVEL 1;
+COMP "vgaRed<0>" LOCATE = SITE "U7" LEVEL 1;
+COMP "vgaRed<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "vgaRed<2>" LOCATE = SITE "N7" LEVEL 1;
+COMP "vgaBlue<1>" LOCATE = SITE "R7" LEVEL 1;
+COMP "vgaBlue<2>" LOCATE = SITE "T7" LEVEL 1;
+PIN VGA_c/U1/Mram_VideoRAM_pins<24> = BEL "VGA_c/U1/Mram_VideoRAM" PINNAME
+        CLKAWRCLK;
+PIN VGA_c/U1/Mram_VideoRAM_pins<25> = BEL "VGA_c/U1/Mram_VideoRAM" PINNAME
+        CLKBRDCLK;
+TIMEGRP sys_clk_pin = BEL "pStore" BEL "ASR_0" BEL "ASR_1" BEL "ASR_2" BEL
+        "ASR_3" BEL "ASR_4" BEL "ASR_5" BEL "ASR_6" BEL "ASR_7" BEL "ASR_8"
+        BEL "ASR_9" BEL "ASR_10" BEL "ASR_11" BEL "ASR_12" BEL "ASR_13" BEL
+        "ASR_14" BEL "ASR_15" BEL "pData_in_0" BEL "pData_in_1" BEL
+        "pData_in_2" BEL "pData_in_3" BEL "pData_in_4" BEL "pData_in_5" BEL
+        "pData_in_6" BEL "pData_in_7" BEL "pData_in_8" BEL "pData_in_9" BEL
+        "pData_in_10" BEL "pData_in_11" BEL "pData_in_12" BEL "pData_in_13"
+        BEL "pData_in_14" BEL "pData_in_15" BEL "IR_0" BEL "IR_1" BEL "IR_2"
+        BEL "IR_3" BEL "IR_4" BEL "IR_5" BEL "IR_6" BEL "IR_7" BEL "IR_8" BEL
+        "IR_9" BEL "IR_10" BEL "IR_11" BEL "IR_12" BEL "IR_13" BEL "IR_14" BEL
+        "IR_15" BEL "GR2_0" BEL "GR2_1" BEL "GR2_2" BEL "GR2_3" BEL "GR2_4"
+        BEL "GR2_5" BEL "GR2_6" BEL "GR2_7" BEL "GR2_8" BEL "GR2_9" BEL
+        "GR2_10" BEL "GR2_11" BEL "GR2_12" BEL "GR2_13" BEL "GR2_14" BEL
+        "GR2_15" BEL "GR0_0" BEL "GR0_1" BEL "GR0_2" BEL "GR0_3" BEL "GR0_4"
+        BEL "GR0_5" BEL "GR0_6" BEL "GR0_7" BEL "GR0_8" BEL "GR0_9" BEL
+        "GR0_10" BEL "GR0_11" BEL "GR0_12" BEL "GR0_13" BEL "GR0_14" BEL
+        "GR0_15" BEL "GR1_0" BEL "GR1_1" BEL "GR1_2" BEL "GR1_3" BEL "GR1_4"
+        BEL "GR1_5" BEL "GR1_6" BEL "GR1_7" BEL "GR1_8" BEL "GR1_9" BEL
+        "GR1_10" BEL "GR1_11" BEL "GR1_12" BEL "GR1_13" BEL "GR1_14" BEL
+        "GR1_15" BEL "GR3_0" BEL "GR3_1" BEL "GR3_2" BEL "GR3_3" BEL "GR3_4"
+        BEL "GR3_5" BEL "GR3_6" BEL "GR3_7" BEL "GR3_8" BEL "GR3_9" BEL
+        "GR3_10" BEL "GR3_11" BEL "GR3_12" BEL "GR3_13" BEL "GR3_14" BEL
+        "GR3_15" BEL "sign_extention_0" BEL "sign_extention_1" BEL
+        "sign_extention_2" BEL "sign_extention_3" BEL "sign_extention_4" BEL
+        "sign_extention_5" BEL "sign_extention_6" BEL "sign_extention_7" BEL
+        "uPC_0" BEL "uPC_1" BEL "uPC_2" BEL "uPC_3" BEL "uPC_4" BEL "uPC_5"
+        BEL "PC_0" BEL "PC_1" BEL "PC_2" BEL "PC_3" BEL "PC_4" BEL "PC_5" BEL
+        "PC_6" BEL "PC_7" BEL "PC_8" BEL "PC_9" BEL "PC_10" BEL "PC_11" BEL
+        "PC_12" BEL "PC_13" BEL "PC_14" BEL "PC_15" BEL "VGA_c/U1/addr_0" BEL
+        "VGA_c/U1/addr_1" BEL "VGA_c/U1/addr_5" BEL "VGA_c/U1/addr_3" BEL
+        "VGA_c/U1/addr_4" BEL "VGA_c/U1/addr_6" BEL "VGA_c/U1/addr_7" BEL
+        "VGA_c/U1/addr_8" BEL "VGA_c/U2/Ypixel1_0" BEL "VGA_c/U2/Xpixel1_0"
+        BEL "VGA_c/U2/Ypixel1_8" BEL "VGA_c/U2/Ypixel1_7" BEL
+        "VGA_c/U2/Ypixel1_9" BEL "VGA_c/U2/Ypixel1_6" BEL "VGA_c/U2/Ypixel1_5"
+        BEL "VGA_c/U2/Ypixel1_3" BEL "VGA_c/U2/Ypixel1_2" BEL
+        "VGA_c/U2/Ypixel1_4" BEL "VGA_c/U2/Ypixel1_1" BEL "VGA_c/U2/Xpixel1_9"
+        BEL "VGA_c/U2/Xpixel1_8" BEL "VGA_c/U2/Xpixel1_7" BEL
+        "VGA_c/U2/Xpixel1_6" BEL "VGA_c/U2/Xpixel1_4" BEL "VGA_c/U2/Xpixel1_3"
+        BEL "VGA_c/U2/Xpixel1_5" BEL "VGA_c/U2/Xpixel1_2" BEL
+        "VGA_c/U2/Xpixel1_1" BEL "VGA_c/U2/ClkDiv_1" BEL "VGA_c/U2/ClkDiv_0"
+        BEL "VGA_c/U2/Vsync" BEL "VGA_c/U2/Hsync" BEL "VGA_c/U2/blank" BEL
+        "VGA_c/U2/Ypixel2_4" BEL "VGA_c/U2/Ypixel2_3" BEL "VGA_c/U2/Ypixel2_2"
+        BEL "VGA_c/U2/Xpixel2_4" BEL "VGA_c/U2/Xpixel2_3" BEL
+        "VGA_c/U2/Xpixel2_2" BEL "VGA_c/U2/Vsync2" BEL "VGA_c/U2/Hsync2" BEL
+        "VGA_c/U2/blank2" BEL "ALU_c/A" BEL "ALU_c/R_16" BEL "ALU_c/R_15" BEL
+        "ALU_c/R_14" BEL "ALU_c/R_13" BEL "ALU_c/R_12" BEL "ALU_c/R_11" BEL
+        "ALU_c/R_10" BEL "ALU_c/R_9" BEL "ALU_c/R_8" BEL "ALU_c/R_7" BEL
+        "ALU_c/R_6" BEL "ALU_c/R_5" BEL "ALU_c/R_4" BEL "ALU_c/R_3" BEL
+        "ALU_c/R_2" BEL "ALU_c/R_1" BEL "ALU_c/R_0" BEL "HALT" BEL
+        "VGA_c/U1/addr_2" BEL "clk_BUFGP/BUFG" PIN
+        "VGA_c/U1/Mram_VideoRAM_pins<24>" PIN
+        "VGA_c/U1/Mram_VideoRAM_pins<25>" BEL "PM_c/Mram_p_mem1/SP.HIGH" BEL
+        "PM_c/Mram_p_mem1/SP.LOW" BEL "PM_c/Mram_p_mem1/DP.HIGH" BEL
+        "PM_c/Mram_p_mem1/DP.LOW" BEL "PM_c/Mram_p_mem4/SP.HIGH" BEL
+        "PM_c/Mram_p_mem4/SP.LOW" BEL "PM_c/Mram_p_mem4/DP.HIGH" BEL
+        "PM_c/Mram_p_mem4/DP.LOW" BEL "PM_c/Mram_p_mem2/SP.HIGH" BEL
+        "PM_c/Mram_p_mem2/SP.LOW" BEL "PM_c/Mram_p_mem2/DP.HIGH" BEL
+        "PM_c/Mram_p_mem2/DP.LOW" BEL "PM_c/Mram_p_mem3/SP.HIGH" BEL
+        "PM_c/Mram_p_mem3/SP.LOW" BEL "PM_c/Mram_p_mem3/DP.HIGH" BEL
+        "PM_c/Mram_p_mem3/DP.LOW" BEL "PM_c/Mram_p_mem5/SP.HIGH" BEL
+        "PM_c/Mram_p_mem5/SP.LOW" BEL "PM_c/Mram_p_mem5/DP.HIGH" BEL
+        "PM_c/Mram_p_mem5/DP.LOW" BEL "PM_c/Mram_p_mem6/SP.HIGH" BEL
+        "PM_c/Mram_p_mem6/SP.LOW" BEL "PM_c/Mram_p_mem6/DP.HIGH" BEL
+        "PM_c/Mram_p_mem6/DP.LOW" BEL "PM_c/Mram_p_mem9/SP.HIGH" BEL
+        "PM_c/Mram_p_mem9/SP.LOW" BEL "PM_c/Mram_p_mem9/DP.HIGH" BEL
+        "PM_c/Mram_p_mem9/DP.LOW" BEL "PM_c/Mram_p_mem7/SP.HIGH" BEL
+        "PM_c/Mram_p_mem7/SP.LOW" BEL "PM_c/Mram_p_mem7/DP.HIGH" BEL
+        "PM_c/Mram_p_mem7/DP.LOW" BEL "PM_c/Mram_p_mem8/SP.HIGH" BEL
+        "PM_c/Mram_p_mem8/SP.LOW" BEL "PM_c/Mram_p_mem8/DP.HIGH" BEL
+        "PM_c/Mram_p_mem8/DP.LOW" BEL "PM_c/Mram_p_mem10/SP.HIGH" BEL
+        "PM_c/Mram_p_mem10/SP.LOW" BEL "PM_c/Mram_p_mem10/DP.HIGH" BEL
+        "PM_c/Mram_p_mem10/DP.LOW" BEL "PM_c/Mram_p_mem11/SP.HIGH" BEL
+        "PM_c/Mram_p_mem11/SP.LOW" BEL "PM_c/Mram_p_mem11/DP.HIGH" BEL
+        "PM_c/Mram_p_mem11/DP.LOW" BEL "PM_c/Mram_p_mem14/SP.HIGH" BEL
+        "PM_c/Mram_p_mem14/SP.LOW" BEL "PM_c/Mram_p_mem14/DP.HIGH" BEL
+        "PM_c/Mram_p_mem14/DP.LOW" BEL "PM_c/Mram_p_mem12/SP.HIGH" BEL
+        "PM_c/Mram_p_mem12/SP.LOW" BEL "PM_c/Mram_p_mem12/DP.HIGH" BEL
+        "PM_c/Mram_p_mem12/DP.LOW" BEL "PM_c/Mram_p_mem13/SP.HIGH" BEL
+        "PM_c/Mram_p_mem13/SP.LOW" BEL "PM_c/Mram_p_mem13/DP.HIGH" BEL
+        "PM_c/Mram_p_mem13/DP.LOW" BEL "PM_c/Mram_p_mem15/SP.HIGH" BEL
+        "PM_c/Mram_p_mem15/SP.LOW" BEL "PM_c/Mram_p_mem15/DP.HIGH" BEL
+        "PM_c/Mram_p_mem15/DP.LOW" BEL "PM_c/Mram_p_mem16/SP.HIGH" BEL
+        "PM_c/Mram_p_mem16/SP.LOW" BEL "PM_c/Mram_p_mem16/DP.HIGH" BEL
+        "PM_c/Mram_p_mem16/DP.LOW" BEL "PM_c/Mram_p_mem17/SP.HIGH" BEL
+        "PM_c/Mram_p_mem17/SP.LOW" BEL "PM_c/Mram_p_mem17/DP.HIGH" BEL
+        "PM_c/Mram_p_mem17/DP.LOW" BEL "PM_c/Mram_p_mem18/SP.HIGH" BEL
+        "PM_c/Mram_p_mem18/SP.LOW" BEL "PM_c/Mram_p_mem18/DP.HIGH" BEL
+        "PM_c/Mram_p_mem18/DP.LOW" BEL "PM_c/Mram_p_mem19/SP.HIGH" BEL
+        "PM_c/Mram_p_mem19/SP.LOW" BEL "PM_c/Mram_p_mem19/DP.HIGH" BEL
+        "PM_c/Mram_p_mem19/DP.LOW" BEL "PM_c/Mram_p_mem20/SP.HIGH" BEL
+        "PM_c/Mram_p_mem20/SP.LOW" BEL "PM_c/Mram_p_mem20/DP.HIGH" BEL
+        "PM_c/Mram_p_mem20/DP.LOW" BEL "PM_c/Mram_p_mem23/SP.HIGH" BEL
+        "PM_c/Mram_p_mem23/SP.LOW" BEL "PM_c/Mram_p_mem23/DP.HIGH" BEL
+        "PM_c/Mram_p_mem23/DP.LOW" BEL "PM_c/Mram_p_mem21/SP.HIGH" BEL
+        "PM_c/Mram_p_mem21/SP.LOW" BEL "PM_c/Mram_p_mem21/DP.HIGH" BEL
+        "PM_c/Mram_p_mem21/DP.LOW" BEL "PM_c/Mram_p_mem22/SP.HIGH" BEL
+        "PM_c/Mram_p_mem22/SP.LOW" BEL "PM_c/Mram_p_mem22/DP.HIGH" BEL
+        "PM_c/Mram_p_mem22/DP.LOW" BEL "PM_c/Mram_p_mem24/SP.HIGH" BEL
+        "PM_c/Mram_p_mem24/SP.LOW" BEL "PM_c/Mram_p_mem24/DP.HIGH" BEL
+        "PM_c/Mram_p_mem24/DP.LOW" BEL "PM_c/Mram_p_mem25/SP.HIGH" BEL
+        "PM_c/Mram_p_mem25/SP.LOW" BEL "PM_c/Mram_p_mem25/DP.HIGH" BEL
+        "PM_c/Mram_p_mem25/DP.LOW" BEL "PM_c/Mram_p_mem28/SP.HIGH" BEL
+        "PM_c/Mram_p_mem28/SP.LOW" BEL "PM_c/Mram_p_mem28/DP.HIGH" BEL
+        "PM_c/Mram_p_mem28/DP.LOW" BEL "PM_c/Mram_p_mem26/SP.HIGH" BEL
+        "PM_c/Mram_p_mem26/SP.LOW" BEL "PM_c/Mram_p_mem26/DP.HIGH" BEL
+        "PM_c/Mram_p_mem26/DP.LOW" BEL "PM_c/Mram_p_mem27/SP.HIGH" BEL
+        "PM_c/Mram_p_mem27/SP.LOW" BEL "PM_c/Mram_p_mem27/DP.HIGH" BEL
+        "PM_c/Mram_p_mem27/DP.LOW" BEL "PM_c/Mram_p_mem29/SP.HIGH" BEL
+        "PM_c/Mram_p_mem29/SP.LOW" BEL "PM_c/Mram_p_mem29/DP.HIGH" BEL
+        "PM_c/Mram_p_mem29/DP.LOW" BEL "PM_c/Mram_p_mem30/SP.HIGH" BEL
+        "PM_c/Mram_p_mem30/SP.LOW" BEL "PM_c/Mram_p_mem30/DP.HIGH" BEL
+        "PM_c/Mram_p_mem30/DP.LOW" BEL "PM_c/Mram_p_mem33/SP.HIGH" BEL
+        "PM_c/Mram_p_mem33/SP.LOW" BEL "PM_c/Mram_p_mem33/DP.HIGH" BEL
+        "PM_c/Mram_p_mem33/DP.LOW" BEL "PM_c/Mram_p_mem31/SP.HIGH" BEL
+        "PM_c/Mram_p_mem31/SP.LOW" BEL "PM_c/Mram_p_mem31/DP.HIGH" BEL
+        "PM_c/Mram_p_mem31/DP.LOW" BEL "PM_c/Mram_p_mem32/SP.HIGH" BEL
+        "PM_c/Mram_p_mem32/SP.LOW" BEL "PM_c/Mram_p_mem32/DP.HIGH" BEL
+        "PM_c/Mram_p_mem32/DP.LOW" BEL "PM_c/Mram_p_mem34/SP.HIGH" BEL
+        "PM_c/Mram_p_mem34/SP.LOW" BEL "PM_c/Mram_p_mem34/DP.HIGH" BEL
+        "PM_c/Mram_p_mem34/DP.LOW" BEL "PM_c/Mram_p_mem35/SP.HIGH" BEL
+        "PM_c/Mram_p_mem35/SP.LOW" BEL "PM_c/Mram_p_mem35/DP.HIGH" BEL
+        "PM_c/Mram_p_mem35/DP.LOW" BEL "PM_c/Mram_p_mem38/SP.HIGH" BEL
+        "PM_c/Mram_p_mem38/SP.LOW" BEL "PM_c/Mram_p_mem38/DP.HIGH" BEL
+        "PM_c/Mram_p_mem38/DP.LOW" BEL "PM_c/Mram_p_mem36/SP.HIGH" BEL
+        "PM_c/Mram_p_mem36/SP.LOW" BEL "PM_c/Mram_p_mem36/DP.HIGH" BEL
+        "PM_c/Mram_p_mem36/DP.LOW" BEL "PM_c/Mram_p_mem37/SP.HIGH" BEL
+        "PM_c/Mram_p_mem37/SP.LOW" BEL "PM_c/Mram_p_mem37/DP.HIGH" BEL
+        "PM_c/Mram_p_mem37/DP.LOW" BEL "PM_c/Mram_p_mem39/SP.HIGH" BEL
+        "PM_c/Mram_p_mem39/SP.LOW" BEL "PM_c/Mram_p_mem39/DP.HIGH" BEL
+        "PM_c/Mram_p_mem39/DP.LOW" BEL "PM_c/Mram_p_mem40/SP.HIGH" BEL
+        "PM_c/Mram_p_mem40/SP.LOW" BEL "PM_c/Mram_p_mem40/DP.HIGH" BEL
+        "PM_c/Mram_p_mem40/DP.LOW" BEL "PM_c/Mram_p_mem43/SP.HIGH" BEL
+        "PM_c/Mram_p_mem43/SP.LOW" BEL "PM_c/Mram_p_mem43/DP.HIGH" BEL
+        "PM_c/Mram_p_mem43/DP.LOW" BEL "PM_c/Mram_p_mem41/SP.HIGH" BEL
+        "PM_c/Mram_p_mem41/SP.LOW" BEL "PM_c/Mram_p_mem41/DP.HIGH" BEL
+        "PM_c/Mram_p_mem41/DP.LOW" BEL "PM_c/Mram_p_mem42/SP.HIGH" BEL
+        "PM_c/Mram_p_mem42/SP.LOW" BEL "PM_c/Mram_p_mem42/DP.HIGH" BEL
+        "PM_c/Mram_p_mem42/DP.LOW" BEL "PM_c/Mram_p_mem44/SP.HIGH" BEL
+        "PM_c/Mram_p_mem44/SP.LOW" BEL "PM_c/Mram_p_mem44/DP.HIGH" BEL
+        "PM_c/Mram_p_mem44/DP.LOW" BEL "PM_c/Mram_p_mem45_Narrowed/LOW" BEL
+        "PM_c/Mram_p_mem45_Narrowed/HIGH" BEL "PM_c/Mram_p_mem46_Narrowed/LOW"
+        BEL "PM_c/Mram_p_mem46_Narrowed/HIGH" BEL
+        "PM_c/Mram_p_mem47_Narrowed/LOW" BEL "PM_c/Mram_p_mem47_Narrowed/HIGH"
+        BEL "PM_c/Mram_p_mem48_Narrowed/LOW" BEL
+        "PM_c/Mram_p_mem48_Narrowed/HIGH" BEL "PM_c/Mram_p_mem49_Narrowed/LOW"
+        BEL "PM_c/Mram_p_mem49_Narrowed/HIGH" BEL
+        "PM_c/Mram_p_mem50_Narrowed/LOW" BEL "PM_c/Mram_p_mem50_Narrowed/HIGH"
+        BEL "PM_c/Mram_p_mem51_Narrowed/LOW" BEL
+        "PM_c/Mram_p_mem51_Narrowed/HIGH" BEL "PM_c/Mram_p_mem52_Narrowed/LOW"
+        BEL "PM_c/Mram_p_mem52_Narrowed/HIGH" BEL
+        "PM_c/Mram_p_mem53_Narrowed/LOW" BEL "PM_c/Mram_p_mem53_Narrowed/HIGH"
+        BEL "PM_c/Mram_p_mem54_Narrowed/LOW" BEL
+        "PM_c/Mram_p_mem54_Narrowed/HIGH" BEL "PM_c/Mram_p_mem55_Narrowed/LOW"
+        BEL "PM_c/Mram_p_mem55_Narrowed/HIGH" BEL
+        "PM_c/Mram_p_mem56_Narrowed/LOW" BEL "PM_c/Mram_p_mem56_Narrowed/HIGH"
+        BEL "PM_c/Mram_p_mem57_Narrowed/LOW" BEL
+        "PM_c/Mram_p_mem57_Narrowed/HIGH" BEL "PM_c/Mram_p_mem58_Narrowed/LOW"
+        BEL "PM_c/Mram_p_mem58_Narrowed/HIGH" BEL
+        "PM_c/Mram_p_mem59_Narrowed/LOW" BEL "PM_c/Mram_p_mem59_Narrowed/HIGH"
+        BEL "PM_c/Mram_p_mem60_Narrowed/LOW" BEL
+        "PM_c/Mram_p_mem60_Narrowed/HIGH" BEL "PM_c/Mram_p_mem61_Narrowed/LOW"
+        BEL "PM_c/Mram_p_mem61_Narrowed/HIGH" BEL
+        "PM_c/Mram_p_mem62_Narrowed/LOW" BEL "PM_c/Mram_p_mem62_Narrowed/HIGH"
+        BEL "PM_c/Mram_p_mem63_Narrowed/LOW" BEL
+        "PM_c/Mram_p_mem63_Narrowed/HIGH" BEL "PM_c/Mram_p_mem64_Narrowed/LOW"
+        BEL "PM_c/Mram_p_mem64_Narrowed/HIGH";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+

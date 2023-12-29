@@ -1,0 +1,4 @@
+vhdl work "../../../VGA_lab.vhd"
+vhdl work "../../../VGA_MOTOR.vhd"
+vhdl work "../../../CHAR_ROM.vhd"
+vhdl work "../../../../VIDEO_RAM.vhd"

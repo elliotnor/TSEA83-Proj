@@ -1,0 +1,7 @@
+INFILE=/home/jensa682/docs/uprogCPU/proj-synthdir/layoutdefault/design.ncd
+OUTFILE=/home/jensa682/docs/uprogCPU/proj-synthdir/layoutdefault/design.bit
+FAMILY=Spartan6
+PART=xc6slx16-3csg324
+WORKINGDIR=/home/jensa682/docs/uprogCPU/proj-synthdir/layoutdefault
+LICENSE=ISE
+USER_INFO=211887302_1777494980_210602001_508

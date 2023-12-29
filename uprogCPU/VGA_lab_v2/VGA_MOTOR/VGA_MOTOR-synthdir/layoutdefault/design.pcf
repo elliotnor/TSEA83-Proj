@@ -1,0 +1,37 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Fri Mar 31 11:38:33 2023
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "clk" LOCATE = SITE "V10" LEVEL 1;
+COMP "vgaGreen<0>" LOCATE = SITE "P8" LEVEL 1;
+COMP "vgaGreen<1>" LOCATE = SITE "T6" LEVEL 1;
+COMP "vgaGreen<2>" LOCATE = SITE "V6" LEVEL 1;
+COMP "Hsync" LOCATE = SITE "N6" LEVEL 1;
+COMP "Vsync" LOCATE = SITE "P7" LEVEL 1;
+COMP "vgaBlue<1>" LOCATE = SITE "R7" LEVEL 1;
+COMP "vgaBlue<2>" LOCATE = SITE "T7" LEVEL 1;
+COMP "vgaRed<0>" LOCATE = SITE "U7" LEVEL 1;
+COMP "rst" LOCATE = SITE "B8" LEVEL 1;
+COMP "vgaRed<1>" LOCATE = SITE "V7" LEVEL 1;
+COMP "vgaRed<2>" LOCATE = SITE "N7" LEVEL 1;
+PIN U1/Mram_VideoRAM_pins<22> = BEL "U1/Mram_VideoRAM" PINNAME CLKA;
+PIN U1/Mram_VideoRAM_pins<23> = BEL "U1/Mram_VideoRAM" PINNAME CLKB;
+PIN U2_U0b/Mram_addr[10]_ROM_DATA[2047][7]_wide_mux_0_OUT_pins<11> = BEL
+        "U2_U0b/Mram_addr[10]_ROM_DATA[2047][7]_wide_mux_0_OUT" PINNAME CLKA;
+TIMEGRP sys_clk_pin = BEL "U2/ClkDiv_1" BEL "U2/ClkDiv_0" BEL "U2/Vsync" BEL
+        "U2/Hsync" BEL "U2/blank" BEL "U2/Ypixel2_4" BEL "U2/Ypixel2_3" BEL
+        "U2/Ypixel2_2" BEL "U2/Xpixel2_4" BEL "U2/Xpixel2_3" BEL
+        "U2/Xpixel2_2" BEL "U2/Vsync2" BEL "U2/Hsync2" BEL "U2/blank2" BEL
+        "U2/Ypixel1_0" BEL "U2/Ypixel1_8" BEL "U2/Ypixel1_7" BEL
+        "U2/Ypixel1_9" BEL "U2/Ypixel1_6" BEL "U2/Ypixel1_5" BEL
+        "U2/Ypixel1_3" BEL "U2/Ypixel1_2" BEL "U2/Ypixel1_4" BEL
+        "U2/Ypixel1_1" BEL "U2/Xpixel1_0" BEL "U2/Xpixel1_9" BEL
+        "U2/Xpixel1_8" BEL "U2/Xpixel1_7" BEL "U2/Xpixel1_6" BEL
+        "U2/Xpixel1_4" BEL "U2/Xpixel1_3" BEL "U2/Xpixel1_5" BEL
+        "U2/Xpixel1_2" BEL "U2/Xpixel1_1" BEL "clk_BUFGP/BUFG" PIN
+        "U1/Mram_VideoRAM_pins<22>" PIN "U1/Mram_VideoRAM_pins<23>" PIN
+        "U2_U0b/Mram_addr[10]_ROM_DATA[2047][7]_wide_mux_0_OUT_pins<11>";
+TS_sys_clk_pin = PERIOD TIMEGRP "sys_clk_pin" 100 MHz HIGH 50%;
+SCHEMATIC END;
+
